@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+  gis-postgresql:
+    container_name: gis-postgresql
+    image: 'postgis/postgis:14-master'
+    restart: always
+    environment:
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: gis-database
+    ports:
+      - 8000:5432
+    networks:
+      - test-network
+    volumes:
+      - gis-postgresql-volume:/home/gis-postgresql
+      
+  gis-liquibase:
+    build: ./devops/database
+    container_name: gis-liquibase
+    environment:
+      - LIQBASE_URL_POSTGRESQL=jdbc:postgresql://gis-postgresql:5432/gis-database?user=postgres&password=postgres
+    depends_on:
+      - gis-postgresql
+    networks:
+      - test-network
+
+volumes:
+  gis-postgresql-volume:
+
+networks:
+  test-network:
