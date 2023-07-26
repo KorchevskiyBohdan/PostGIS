@@ -8,8 +8,8 @@ A `spatial reference system (SRS)` or coordinate reference system `(CRS)` is a f
 
 `SRID` - this is the identifier for the `SRS`.
 
-When we create column we can set `SRID` to identify `SRS` for special type. \Example: 
-
+When we create column we can set `SRID` to identify `SRS` for special type.\
+Example: 
 ```sh
 DECLARE SRID INTEGER := 4326;
 CREATE TABLE coordinates (first_location geography(POINT, SRID));
@@ -32,7 +32,7 @@ Project demonstrate base functions and data types like: `POINT`, `LINESTRING`, `
 
 ## Deployment
 
-Run `docker compose up command` in root folder.
+Run `docker compose up` command in root folder.
 
 ## Documentation
 
