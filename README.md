@@ -8,13 +8,13 @@ A `spatial reference system (SRS)` or coordinate reference system `(CRS)` is a f
 
 `SRID` - this is the identifier for the `SRS`.
 
-When we create column we can set `SRID` to identify `SRS` for special type. EXAMPLE: 
+When we create column we can set `SRID` to identify `SRS` for special type. \Example: 
 
 ```sh
 DECLARE SRID INTEGER := 4326;
 CREATE TABLE coordinates (first_location geography(POINT, SRID));
 ```
-In this example `POINT` is the `GEOMETRY` data type but we convert it into `GEOGRAPHY` by setting `SRID`.
+In this example `POINT` is the `GEOMETRY` data type but we convert it into `GEOGRAPHY` by setting `SRID`.\
 A `common SRID in use is **4326**`, which represents spatial data using longitude and latitude coordinates on the Earth's surface as defined in the WGS84 standard, which is also used for the `**Global Positioning System (GPS)**`.
 
 ## Project composition
