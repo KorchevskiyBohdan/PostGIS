@@ -4,7 +4,7 @@
 In SQL, the `GEOMETRY` data type represents data in a two-dimensional `Cartesian plane`.
 It can store points, lines, and polygons, as well as more complex shapes like circles and rectangles. The `GEOGRAPHY` data type is similar to `GEOMETRY`, but it represents data in a `round-earth` coordinate system.
 
-A `spatial reference system (SRS)` or coordinate reference system `(CRS)` is a framework used to precisely measure locations on the surface of the Earth as coordinates. It is thus the application of the abstract mathematics of coordinate systems and analytic geometry to geographic space.
+A `spatial reference system (SRS)` or `coordinate reference system (CRS)` is a framework used to precisely measure locations on the surface of the Earth as coordinates. It is thus the application of the abstract mathematics of coordinate systems and analytic geometry to geographic space.
 
 `SRID` - this is the identifier for the `SRS`.
 
