@@ -34,6 +34,6 @@ Run `docker compose up command` in root folder.
 
 ## Documentation
 
-`Geography`: http://postgis.net/workshops/postgis-intro/geography.html <br />
-`Geometries`: http://postgis.net/workshops/postgis-intro/geometries.html <br />
-`Getting Started`: https://postgis.net/documentation/getting_started/ <br />
+`Geography`: http://postgis.net/workshops/postgis-intro/geography.html \
+`Geometries`: http://postgis.net/workshops/postgis-intro/geometries.html \
+`Getting Started`: https://postgis.net/documentation/getting_started/ \
