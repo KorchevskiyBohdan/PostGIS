@@ -21,7 +21,7 @@ A `common SRID in use is **4326**`, which represents spatial data using longitud
 
 This project consist of two services:
 
-1) `POSTGRESQL` with extention `GIS (POSTGIS)`
+1) `POSTGRESQL` with extention `GIS` **(POSTGIS)**
 2) `LIQUIBASE`
 
 `POSTGIS` images in DockerHub: https://registry.hub.docker.com/r/postgis/postgis/
